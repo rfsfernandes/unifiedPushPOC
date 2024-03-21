@@ -41,13 +41,20 @@ android {
 tasks.withType<DokkaTask>().configureEach {
     moduleName.set(project.name)
     moduleVersion.set(project.version.toString())
-//    outputDirectory.set(layout.buildDirectory.dir("dokka/$name"))
     failOnWarning.set(false)
     suppressObviousFunctions.set(true)
     suppressInheritedMembers.set(true)
      // ..
     // source set configuration section
     // ..
+}
+
+tasks.dokkaHtml.configure {
+    outputDirectory.set(layout.projectDirectory.dir("dokkaHtml/$name"))
+}
+
+tasks.dokkaGfm.configure {
+    outputDirectory.set(layout.projectDirectory.dir("dokkaGfm/$name"))
 }
 
 dependencies {
