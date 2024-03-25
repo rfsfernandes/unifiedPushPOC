@@ -6,6 +6,9 @@ import org.unifiedpush.android.connector.UnifiedPush
 import permissions.dispatcher.RuntimePermissions
 
 @RuntimePermissions
+/**
+ * Just a test
+ */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
