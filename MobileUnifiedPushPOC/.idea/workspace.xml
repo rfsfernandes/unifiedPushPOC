@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="602eb2a2-be0a-4808-886c-960592c6d729" name="Changes" comment="Fixed dokka">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetDropDown.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/migrations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-main-activity/-main-activity.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-main-activity/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-my-app/-my-app.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-my-app/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-my-app/on-create.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-notification-helper/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-notification-helper/send-notification.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/-push-receiver.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-message.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-new-endpoint.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-registration-failed.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-unregistered.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/com.rfsfernandes.mobileunifiedpushpoc/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/app/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaGfm/dokkaGfm/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-main-activity/-main-activity.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-main-activity/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-my-app/-my-app.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-my-app/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-my-app/on-create.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-notification-helper/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-notification-helper/send-notification.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/-push-receiver.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-message.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-new-endpoint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-registration-failed.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/-push-receiver/on-unregistered.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/com.rfsfernandes.mobileunifiedpushpoc/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/app/package-list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/anchor-copy-button.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/arrow_down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/burger.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/copy-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/copy-successful-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/footer-go-to-link.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/go-to-top-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/homepage.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/logo-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/abstract-class-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/abstract-class.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/annotation-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/annotation.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/class-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/class.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/enum-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/enum.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/exception-class.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/field-value.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/field-variable.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/function.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/interface-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/interface.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/object.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/nav-icons/typealias-kotlin.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/images/theme-toggle.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/navigation.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/clipboard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/navigation-loader.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/pages.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/platform-content-handler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/prism.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/sourceset_dependencies.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/scripts/symbol-parameters-wrapper_deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/styles/font-jb-sans-auto.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/styles/logo-styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/styles/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/styles/prism.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/dokkaHtml/dokkaHtml/styles/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/rfsfernandes/mobileunifiedpushpoc/ExampleInstrumentedTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rfsfernandes/mobileunifiedpushpoc/MainActivity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rfsfernandes/mobileunifiedpushpoc/MyApp.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rfsfernandes/mobileunifiedpushpoc/NotificationHelper.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/rfsfernandes/mobileunifiedpushpoc/PushReceiver.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_android_black_24dp.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/rfsfernandes/mobileunifiedpushpoc/ExampleUnitTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[/Users/user01/.android/avd/Automotive_1080p_landscape_API_33_Google_APIs.avd]" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/app">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MobileUnifiedPushPOC" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MobileUnifiedPushPOC" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MobileUnifiedPushPOC" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="MobileUnifiedPushPOC" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="other" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="2e0EfxvPWBbK3fE5eteqXuKNYDx" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/user01/Documents/projects/repos/unifiedPushPOC/MobileUnifiedPushPOC&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="MobileUnifiedPushPOC.app.main" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ALL_USERS" value="false" />
+      <option name="ALWAYS_INSTALL_WITH_PM" value="false" />
+      <option name="CLEAR_APP_STORAGE" value="false" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="INSPECTION_WITHOUT_ACTIVITY_RESTART" value="false" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Hybrid>
+      <Java>
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Java>
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+        <option name="ATTACH_ON_WAIT_FOR_DEBUGGER" value="false" />
+        <option name="DEBUG_SANDBOX_SDK" value="false" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Java/Kotlin Method Sample (legacy)" />
+        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
+        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
+      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="602eb2a2-be0a-4808-886c-960592c6d729" name="Changes" comment="" />
+      <created>1711033202821</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1711033202821</updated>
+    </task>
+    <task id="LOCAL-00001" summary="First commit">
+      <option name="closed" value="true" />
+      <created>1711033232159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1711033232159</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Fixed dokka">
+      <option name="closed" value="true" />
+      <created>1711033490323</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711033490323</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fixed dokka">
+      <option name="closed" value="true" />
+      <created>1711033517725</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711033517725</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="First commit" />
+    <MESSAGE value="Fixed dokka" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed dokka" />
+  </component>
+</project>
