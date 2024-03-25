@@ -52,18 +52,7 @@ jobs:
         VERSION=$(git tag --sort=committerdate | tail -1)
         echo Generating API documentation for version $VERSION
         ./gradlew -Pversion=$VERSION dokkaHtml
-
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    steps:  
-    - name: Deploy API documentation to Github Pages
+     - name: Deploy API documentation to Github Pages
       if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
       id: deployment
       uses: JamesIves/github-pages-deploy-action@v4
