@@ -7,7 +7,7 @@ import permissions.dispatcher.RuntimePermissions
 
 @RuntimePermissions
 /**
- * Just a test
+ * Just a test.
  */
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
