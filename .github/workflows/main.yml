@@ -53,4 +53,4 @@ jobs:
       uses: actions/deploy-pages@v4
       with:
         branch: gh-pages
-        folder: app/dokkaHtml/dokkaHtml
+        folder: build/dokka/html
