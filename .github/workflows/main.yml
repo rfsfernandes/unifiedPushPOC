@@ -50,7 +50,7 @@ jobs:
 
     - name: Deploy API documentation to Github Pages
       if: ${{ github.ref == 'refs/heads/master' && github.event_name != 'pull_request' }}
-      uses: JamesIves/github-pages-deploy-action@v4
+      uses: actions/deploy-pages
       with:
-        branch: gh-pages
+        branch: github-pages
         folder: app/build/dokkaHtml
