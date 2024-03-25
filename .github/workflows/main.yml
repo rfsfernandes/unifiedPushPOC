@@ -62,20 +62,11 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
-    steps:
-    - name: Upload Documentation Artifact
-      uses: actions/upload-artifact@v4
-      with:
-        name: github-pages
-        path: app/build/dokkaHtml
-    
-    - name: Configure Pages
-      uses: actions/configure-pages@v4
-      
+    steps:  
     - name: Deploy API documentation to Github Pages
       if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
       id: deployment
-      uses: actions/deploy-pages@v4
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: github-pages
         folder: app/build/dokkaHtml
