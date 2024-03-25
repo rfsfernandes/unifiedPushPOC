@@ -72,4 +72,6 @@ dependencies {
     val permissions_version = "4.9.2"
     implementation("com.github.permissions-dispatcher:permissionsdispatcher:$permissions_version")
     annotationProcessor("com.github.permissions-dispatcher:permissionsdispatcher-processor:$permissions_version")
+
+    dokkaPlugin("org.jetbrains.dokka:android-documentation-plugin:1.9.20")
 }
