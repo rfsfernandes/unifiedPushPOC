@@ -28,4 +28,4 @@ jobs:
     - name: Deploy HTML Docs to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
       with:
-        publish_dir: ./build/dokkaHtml
+        publish_dir: ./app/build/dokkaHtml
