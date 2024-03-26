@@ -16,12 +16,11 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-
-  permissions:
-    contents: read
-    pages: write
-    id-token: write
   build:
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     environment:
         name: github-pages
         url: ${{ steps.deployment.outputs.page_url }}
@@ -50,12 +49,14 @@ jobs:
             exit 1
           fi
         fi
+
     - name: Generate API documentation
       if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
       run: |
         VERSION=$(git tag --sort=committerdate | tail -1)
         echo Generating API documentation for version $VERSION
         ./gradlew -Pversion=$VERSION dokkaHtml
+
     - name: Deploy API documentation to Github Pages
       if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
       id: deployment
