@@ -50,7 +50,10 @@ tasks.withType<DokkaTask>().configureEach {
 }
 
 tasks.dokkaHtml.configure {
-    outputDirectory.set(buildDir.resolve("dokkaHtml"))
+    outputDirectory.set(file("../documentation/dokkaHtml/$name"))
+}
+tasks.dokkaGfm.configure {
+    outputDirectory.set(file("../documentation/dokkaGfm/$name"))
 }
 
 dependencies {
