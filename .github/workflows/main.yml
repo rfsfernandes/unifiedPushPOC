@@ -1,4 +1,4 @@
-name: Build, test, and deploy API docs
+name: Generate Dokka documentation
 
 
 on:
@@ -38,7 +38,7 @@ jobs:
     - name: Setup Gradle
       uses: gradle/gradle-build-action@v2
 
-    - name: Build and run tests
+    - name: Build
       id: build
       run: |
         if ! ./gradlew build; then
@@ -56,11 +56,11 @@ jobs:
         VERSION=$(git tag --sort=committerdate | tail -1)
         echo Generating API documentation for version $VERSION
         ./gradlew -Pversion=$VERSION dokkaHtml
-
-    - name: Deploy API documentation to Github Pages
-      if: ${{ github.ref == 'refs/heads/main' && github.event_name != 'pull_request' }}
-      id: deployment
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        branch: github-pages
-        folder: app/build/dokkaHtml
+        ./gradlew -Pversion=$VERSION dokkaGfm
+    - uses: actions/checkout@v3
+    - name: Commit Documentation
+      run: |
+        git config --global user.email "rodrigoserrafernandes98@gmail.com"
+        git config --global user.name "Rodrigo Fernandes"
+        git commit -am "Automated Dokka documentation"
+        git push
