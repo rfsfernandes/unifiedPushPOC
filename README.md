@@ -1,6 +1,6 @@
 ---
 title: Integration Guide
-category: 6634bdbe37990000692cca98
+category: 6638ec379b9bfd001e311fcb
 ---
 
 # {WIP}  Generic  FAA  Payment  Solution  >  In-App  SDK  v2
@@ -10,11 +10,12 @@ category: 6634bdbe37990000692cca98
 ### <a name="tag-product-type"></a>ProductType
 Supported  Product  types.
 
-![Add image of ProductType](blob:https://linkhere.com/)
+![Product type](./documentation/product-type.jpeg)
 > [!WARNING]
 > Subscriptions are currently not supported.
 <br>
 -----------
+
 ### <a name="tag-feature-type"></a>FeatureType
 Features/capabilities  supported  by  isFeaturedAvailable.
 
@@ -32,7 +33,7 @@ Features/capabilities  supported  by  isFeaturedAvailable.
 
 Possible  response  codes.
 
-![Add image of BillingResponseCode](blob:https://linkhere.com/)
+![BillingResponseCode](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/billing-response.jpeg?raw=true)  
 
 | **Property** | **Description** |
 | --- | --- |
@@ -49,11 +50,12 @@ Possible  response  codes.
 | ITEM\_NOT\_OWNED | Requested  action  on  the  item  failed  since  it  is  not  owned  by  the  user. |
 | NETWORK_ERROR | A  network  error  occurred  during  the  operation. |
 
-
+  
 ### PurchaseState
 
 Possible  purchase  states.
-![Add image of BillingResponseCode](blob:https://linkhere.com/)
+
+![purchase state](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/purchase-state.jpeg?raw=true)  
 
 | **Value** | **Description** |
 | --- | --- |
@@ -65,7 +67,7 @@ Possible  purchase  states.
 
 Represents  the  details  of  a  one  time  or  subscription  product.
 
-![Add images here](1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022/1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022-10.png)
+![Product details](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/product-details.jpeg?raw=true)  
 
 | **Property** | **Description** |
 | --- | --- |
@@ -88,7 +90,7 @@ Represents  the  details  of  a  one  time  or  subscription  product.
 
 #### ProductDetailsResult
 
-![Add image here](1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022/1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022-12.png)
+![Product details result](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/product-details-result.png?raw=true)
 
 
 
@@ -96,7 +98,7 @@ Represents  the  details  of  a  one  time  or  subscription  product.
 
 Represents  an  in-app  billing  purchase.
 
-![Add image here ](1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022/1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022-13.png)
+![Purchase](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/purchase.jpeg?raw=true)
 
 | **Property** | **Description** |
 | --- | --- |
@@ -121,8 +123,7 @@ Represents  an  in-app  billing  purchase.
 
 Result  list  and  response  code  for  **queryPurchases**  method.
 
-![Add image here](1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022/1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022-15.png)  
-![](1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022/1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022-16.png)
+![Purchase result](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/purchase-result.jpeg?raw=true)  
 
 ## Features
 
@@ -350,13 +351,13 @@ val billingResponseCode = billingClient.launchBillingFlow(billingFlowParams)
 ```
 
 When  launchBillingFlow()  is  called  successfully,  the  system  shows  a  billing  dialog:
-![Add image here](1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022/1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022-64.png)
+![Confirm purchase](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/confirm-purchase.png?raw=true)
 
 The Payments service calls ```onPurchasesUpdated()``` to deliver the result of the purchase operation to a listener that implements the ```PurchasesUpdatedListener interface```. The listener is specified using the ```setListener()``` method when you [initialized your client](#initialise-billingclient).
 
 A successful purchase generates a purchase success screen:
 
-![Add image here](1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022/1714662568_p-wip-generic-faa-payment-solution-in-app-sdk-v2-020524-144022-68.png)
+![Purchase confirmation](https://github.com/faurecia-aptoide/android-inappbilling-sdk/blob/11b1c8c67a41d2c6fd1d927691db6bca978b8cf1/documentation/purchase-confirmation.png?raw=true)  
 
 > [!NOTE]
 > The UI showcased here will vary depending on the environment (OEM) where the purchases are taking place.
