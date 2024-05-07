@@ -1,6 +1,7 @@
 ---
 title: Settings package
 category: 6639fe61beca8200112d20c0
+slug: settings-page
 ---
 
 //[billing](../../index.md)/[com.faa.billing.core.settings](index.md)

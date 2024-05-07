@@ -1,6 +1,7 @@
 ---
 title: Index SDK Documentation
 category: 6639fe61beca8200112d20c0
+slug: index-sdk
 ---
 
 //[billing](index.md)
