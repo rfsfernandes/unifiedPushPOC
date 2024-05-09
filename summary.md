@@ -2,4 +2,4 @@
 
 ## Table of contents
 
-- [SDK Documentation](./documentation/dokkaGfm/dokkaGfm)
+- [SDK Documentation](documentation/dokkaGfm/dokkaGfm/index.md)

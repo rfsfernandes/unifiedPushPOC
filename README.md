@@ -1,6 +1,5 @@
 ---
 title: Integration Guide
-category: 6639fe61beca8200112d20c0
 ---
 
 # {WIP}  Generic  FAA  Payment  Solution  >  In-App  SDK  v2
