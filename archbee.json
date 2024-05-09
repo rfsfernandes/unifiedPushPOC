@@ -1,0 +1,6 @@
+{
+  "root": "documentation",
+  "structure": {
+    "assets": "dokkaGfm"
+  }
+}
