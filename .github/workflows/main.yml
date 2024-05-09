@@ -24,7 +24,12 @@ jobs:
 
       - name: Generate Dokka Documentation
         run: |
-          ./gradlew dokkaHtml  # or whatever command generates Dokka documentation
+          ./gradlew dokkaGfm
+
+      - name: Copy README to documentation
+        run: |
+          cp "README.md" "./documentation/integration_guide.md"
+          done
 
       - name: Commit changes
         run: |
