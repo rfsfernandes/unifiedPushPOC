@@ -1,0 +1,4 @@
+root: ./
+structure:
+  summary: summary.md
+publishSpace: true
