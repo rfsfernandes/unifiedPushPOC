@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: '17'  # or the version you're using
+          distribution: temurin
 
       - name: Generate Dokka Documentation
         run: |
