@@ -1,4 +1,5 @@
-root: ./documentation
+root: documentation
 structure:
   readme: ../README.md
+  assets: dokkaGfm
 publishSpace: true
