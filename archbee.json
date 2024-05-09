@@ -1,6 +1,6 @@
 {
   "docsPath": "documentation/dokkaGfm/",
   "structure": {
-    "summary": "../README.md"
+    "summary": "../../README.md"
   }
 }
