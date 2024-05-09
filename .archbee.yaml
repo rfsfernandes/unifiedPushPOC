@@ -1,5 +1,4 @@
 root: documentation
 structure:
-  summary: summary.md
   assets: dokkaGfm
 publishSpace: true
