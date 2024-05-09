@@ -28,8 +28,8 @@ jobs:
 
       - name: Commit changes
         run: |
-#          git config --local user.email "mail-admin@faurecia-aptoide.com"
-#          git config --local user.name "Faurecia Aptoide Automotive"
+          git config --local user.email "mail-admin@faurecia-aptoide.com"
+          git config --local user.name "Faurecia Aptoide Automotive"
           git add .
-          git commit --amend --no-edit
-          git push origin main --force
+          git commit -m "Generate Dokka documentation"
+          git push origin main
