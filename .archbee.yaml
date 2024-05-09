@@ -1,4 +1,4 @@
-root: ./documentation
+docsPath: ./documentation
 structure:
   assets: dokkaGfm
 publishSpace: true
