@@ -1,3 +1,4 @@
 {
-  "docsPath": "documentation/"
+  "docsPath": "documentation/",
+  "publishSpace": true
 }
