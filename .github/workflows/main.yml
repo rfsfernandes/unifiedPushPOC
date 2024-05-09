@@ -17,6 +17,7 @@ jobs:
         uses: actions/setup-java@v2
         with:
           java-version: '11'  # or the version you're using
+          distribution: 'adopt'
 
       - name: Generate Dokka Documentation
         run: |
