@@ -31,7 +31,7 @@ object NotificationHelper {
     fun sendNotification(context: Context, content: String) {
         val builder = NotificationCompat.Builder(context, CHANNEL_ID)
             .setSmallIcon(R.drawable.ic_android_black_24dp)
-            .setContentTitle("Um teste")
+            .setContentTitle("Um testeee")
             .setContentText(content)
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
