@@ -15,7 +15,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
+  pre-commit:
     permissions:
       contents: write
       pages: write
@@ -43,12 +43,11 @@ jobs:
         VERSION=$(git tag --sort=committerdate | tail -1)
         echo Generating API documentation for version $VERSION
         ./gradlew -Pversion=$VERSION dokkaHtml
-        ./gradlew -Pversion=$VERSION dokkaGfm
-
-    - name: Commit Documentation
-      run: |
-        git config --global user.email "rodrigoserrafernandes98@gmail.com"
-        git config --global user.name "Rodrigo Fernandes"
-        git add .
-        git diff-index --quiet HEAD || git commit -am "Automated Dokka documentation"
-        git push
+#
+#    - name: Commit Documentation
+#      run: |
+#        git config --global user.email "rodrigoserrafernandes98@gmail.com"
+#        git config --global user.name "Rodrigo Fernandes"
+#        git add .
+#        git diff-index --quiet HEAD || git commit -am "Automated Dokka documentation"
+#        git push
