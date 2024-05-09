@@ -29,7 +29,6 @@ jobs:
       - name: Copy README to documentation
         run: |
           cp "README.md" "./documentation/integration_guide.md"
-          done
 
       - name: Commit changes
         run: |
