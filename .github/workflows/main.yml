@@ -117,9 +117,9 @@ jobs:
 
       - name: Commit Documentation
         run: |
-          git checkout master
+          git checkout main
           git config --global user.email "mail-admin@faurecia-aptoide.com"
           git config --global user.name "Faurecia Aptoide Automotive"
           git add .
           git diff-index --quiet HEAD || git commit -am "Automated Dokka documentation"
-          git push origin master
+          git push origin main
