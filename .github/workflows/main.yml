@@ -19,6 +19,75 @@ jobs:
           java-version: '17'  # or the version you're using
           distribution: temurin
 
+      # To keep FAA secret files
+      - name: Make .faapriv directory
+        run: mkdir .faapriv
+
+      - name: Create .credentials file
+        run: touch .faapriv/.credentials
+
+      - name: Write .credentials file
+        env:
+          CREDENTIALS_SECRET: |
+            ${{ secrets.CREDENTIALS }}
+        run: echo "$CREDENTIALS_SECRET" > .faapriv/.credentials
+
+      - name: Create .download_secrets file
+        run: touch .faapriv/.download_secrets
+
+      - name: Write .download_secrets file
+        env:
+          DOWNLOAD_SECRETS_SECRET: |
+            ${{ secrets.DOWNLOAD_SECRETS }}
+        run: echo "$DOWNLOAD_SECRETS_SECRET" > .faapriv/.download_secrets
+
+      - name: Create .secrets file
+        run: touch .faapriv/.secrets
+
+      - name: Write .secrets file
+        env:
+          SECRETS_SECRET: |
+            ${{ secrets.SECRETS }}
+        run: echo "$SECRETS_SECRET" > .faapriv/.secrets
+
+      - name: Create keystore.properties file
+        run: touch .faapriv/keystore.properties
+
+      - name: Write keystore.properties file
+        env:
+          KEYSTORE_PROPS_SECRET: |
+            ${{ secrets.KEYSTORE_PROPERTIES }}
+        run: echo "$KEYSTORE_PROPS_SECRET" > .faapriv/keystore.properties
+
+      - name: LS Root
+        run: ls -la .faapriv
+
+      - name: LS FAA Priv
+        run: ls -la .faapriv
+
+      - name: CAT keystore.properties
+        run: cat .faapriv/keystore.properties
+
+      - name: Create Debug Keystore
+        id: create_debug_keystore
+        uses: timheuer/base64-to-file@v1.2
+        with:
+          fileName: 'faa_android_debug_keystore.jks'
+          encodedString: ${{ secrets.DEBUG_KEYSTORE }}
+
+      - name: Copy Debug Keystore file to .faapriv
+        run: cp ${{ steps.create_debug_keystore.outputs.filePath }} .faapriv
+
+      - name: Create Release Keystore
+        id: create_release_keystore
+        uses: timheuer/base64-to-file@v1.2
+        with:
+          fileName: 'faa_android_release_keystore.jks'
+          encodedString: ${{ secrets.RELEASE_KEYSTORE }}
+
+      - name: Copy Release Keystore file to .faapriv
+        run: cp ${{ steps.create_release_keystore.outputs.filePath }} .faapriv
+
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
 
