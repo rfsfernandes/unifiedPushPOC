@@ -97,7 +97,7 @@ jobs:
 
       - name: Remove .faapriv
         run: |
-          rmdir -r .faapriv
+          rm -rf .faapriv
 
       - name: Copy README to documentation
         run: |
