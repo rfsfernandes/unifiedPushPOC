@@ -53,15 +53,6 @@ jobs:
             ${{ secrets.CREDENTIALS }}
         run: echo "$CREDENTIALS_SECRET" > .faapriv/.credentials
 
-      - name: Create .download_secrets file
-        run: touch .faapriv/.download_secrets
-
-      - name: Write .download_secrets file
-        env:
-          DOWNLOAD_SECRETS_SECRET: |
-            ${{ secrets.DOWNLOAD_SECRETS }}
-        run: echo "$DOWNLOAD_SECRETS_SECRET" > .faapriv/.download_secrets
-
       - name: Create .secrets file
         run: touch .faapriv/.secrets
 
@@ -111,17 +102,13 @@ jobs:
 
       - name: Generate Dokka Documentation
         run: |
-          ./gradlew dokkaGfm
+          VERSION=$(git tag --sort=committerdate | tail -1)
+          echo Generating API documentation for version $VERSION
+          gradle -Pversion=$VERSION dokkaGfm
 
       - name: Remove .faapriv
         run: |
           rm -rf .faapriv
-
-      - name: Generate SDK documentation
-        run: |
-          VERSION=$(git tag --sort=committerdate | tail -1)
-          echo Generating API documentation for version $VERSION
-          gradle -Pversion=$VERSION dokkaGfm
 
       - name: Copying README to documentation
         run: |
