@@ -95,6 +95,10 @@ jobs:
         run: |
           ./gradlew dokkaGfm
 
+      - name: Remove .faapriv
+        run: |
+          rmdir -r .faapriv
+
       - name: Copy README to documentation
         run: |
           cp "README.md" "./documentation/integration_guide.md"
