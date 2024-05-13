@@ -1,4 +1,6 @@
 import org.jetbrains.dokka.gradle.DokkaTask
+import java.io.FileInputStream
+import java.util.Properties
 
 plugins {
     id("com.android.application")
@@ -6,9 +8,23 @@ plugins {
     id("org.jetbrains.dokka") version "1.9.20"
 }
 
+val keystorePropertiesFile = rootProject.file(".faapriv/keystore.properties")
+val keystoreProperties = Properties()
+keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+
 android {
     namespace = "com.rfsfernandes.mobileunifiedpushpoc"
     compileSdk = 34
+
+    signingConfigs {
+
+        create("release") {
+            storeFile = keystoreProperties["release_keystore_file"]?.let { file(it) }
+            storePassword = keystoreProperties["release_keystore_password"].toString()
+            keyAlias = keystoreProperties["release_key_alias"].toString()
+            keyPassword = keystoreProperties["release_key_password"].toString()
+        }
+    }
 
     defaultConfig {
         applicationId = "com.rfsfernandes.mobileunifiedpushpoc"
@@ -44,7 +60,7 @@ tasks.withType<DokkaTask>().configureEach {
     failOnWarning.set(false)
     suppressObviousFunctions.set(true)
     suppressInheritedMembers.set(true)
-     // ..
+    // ..
     // source set configuration section
     // ..
 }
