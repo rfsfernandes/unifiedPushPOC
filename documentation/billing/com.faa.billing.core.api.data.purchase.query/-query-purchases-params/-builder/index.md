@@ -2,18 +2,18 @@
 
 # Builder
 
-[androidJvm]\
+\
 class [Builder](index.md)
 
 ## Constructors
 
 | | |
 |---|---|
-| [Builder](-builder.md) | [androidJvm]<br>constructor() |
+| [Builder](-builder.md) | <br>constructor() |
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [build](build.md) | [androidJvm]<br>fun [build](build.md)(): [QueryPurchasesParams](../index.md) |
-| [setProductType](set-product-type.md) | [androidJvm]<br>fun [setProductType](set-product-type.md)(productType: [ProductType](../../../com.faa.billing.core.api/-product-type/index.md)): [QueryPurchasesParams.Builder](index.md)<br>Set the [ProductType](../../../com.faa.billing.core.api/-product-type/index.md) to query purchases. |
+| [build](build.md) | <br>fun [build](build.md)(): [QueryPurchasesParams](../index.md) |
+| [setProductType](set-product-type.md) | <br>fun [setProductType](set-product-type.md)(productType: [ProductType](../../../com.faa.billing.core.api/-product-type/index.md)): [QueryPurchasesParams.Builder](index.md)<br>Set the [ProductType](../../../com.faa.billing.core.api/-product-type/index.md) to query purchases. |

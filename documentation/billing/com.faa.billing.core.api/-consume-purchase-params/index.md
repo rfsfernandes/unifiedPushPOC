@@ -2,7 +2,7 @@
 
 # ConsumePurchaseParams
 
-[androidJvm]\
+\
 class [ConsumePurchaseParams](index.md)
 
 Parameters to consume a purchase. See BillingClient#consumePurchase(ConsumeParams, ConsumeResponseListener).
@@ -11,10 +11,10 @@ Parameters to consume a purchase. See BillingClient#consumePurchase(ConsumeParam
 
 | Name | Summary |
 |---|---|
-| [Builder](-builder/index.md) | [androidJvm]<br>class [Builder](-builder/index.md)<br>Helps construct [ConsumePurchaseParams](index.md) that are used to consume a purchase. |
+| [Builder](-builder/index.md) | <br>class [Builder](-builder/index.md)<br>Helps construct [ConsumePurchaseParams](index.md) that are used to consume a purchase. |
 
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [purchaseToken](purchase-token.md) | [androidJvm]<br>val [purchaseToken](purchase-token.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Token that identifies the purchase to be consumed. |
+| [purchaseToken](purchase-token.md) | <br>val [purchaseToken](purchase-token.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>Token that identifies the purchase to be consumed. |

@@ -2,7 +2,7 @@
 
 # AcknowledgePurchaseParams
 
-[androidJvm]\
+\
 class [AcknowledgePurchaseParams](index.md)
 
 Parameters to acknowledge a purchase. See BillingClient.acknowledgePurchase(AcknowledgePurchaseParams, AcknowledgePurchaseResponseListener).
@@ -11,10 +11,10 @@ Parameters to acknowledge a purchase. See BillingClient.acknowledgePurchase(Ackn
 
 | Name | Summary |
 |---|---|
-| [Builder](-builder/index.md) | [androidJvm]<br>class [Builder](-builder/index.md)<br>Helps construct [AcknowledgePurchaseParams](index.md) that are used to acknowledge a purchase. |
+| [Builder](-builder/index.md) | <br>class [Builder](-builder/index.md)<br>Helps construct [AcknowledgePurchaseParams](index.md) that are used to acknowledge a purchase. |
 
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [purchaseToken](purchase-token.md) | [androidJvm]<br>val [purchaseToken](purchase-token.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>The token that identifies the purchase to be acknowledged. |
+| [purchaseToken](purchase-token.md) | <br>val [purchaseToken](purchase-token.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>The token that identifies the purchase to be acknowledged. |

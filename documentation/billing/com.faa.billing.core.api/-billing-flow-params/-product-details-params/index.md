@@ -2,7 +2,7 @@
 
 # ProductDetailsParams
 
-[androidJvm]\
+\
 class [ProductDetailsParams](index.md)
 
 Params that describe the product to be purchased.
@@ -11,10 +11,10 @@ Params that describe the product to be purchased.
 
 | Name | Summary |
 |---|---|
-| [Builder](-builder/index.md) | [androidJvm]<br>class [Builder](-builder/index.md)<br>Builder that helps construct [ProductDetailsParams](index.md). |
+| [Builder](-builder/index.md) | <br>class [Builder](-builder/index.md)<br>Builder that helps construct [ProductDetailsParams](index.md). |
 
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [productDetails](product-details.md) | [androidJvm]<br>val [productDetails](product-details.md): [ProductDetails](../../-product-details/index.md) |
+| [productDetails](product-details.md) | <br>val [productDetails](product-details.md): [ProductDetails](../../-product-details/index.md) |
