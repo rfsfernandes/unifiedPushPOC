@@ -2,7 +2,7 @@
 
 # Builder
 
-[androidJvm]\
+\
 class [Builder](index.md)
 
 ## Constructors

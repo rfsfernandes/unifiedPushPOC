@@ -2,7 +2,7 @@
 
 # ConsumePurchaseResponseListener
 
-[androidJvm]\
+\
 fun interface [ConsumePurchaseResponseListener](index.md)
 
 Callback that notifies when a consumption operation finishes.

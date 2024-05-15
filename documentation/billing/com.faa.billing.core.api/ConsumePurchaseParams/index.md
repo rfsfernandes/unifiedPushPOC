@@ -2,7 +2,7 @@
 
 # ConsumePurchaseParams
 
-[androidJvm]\
+\
 class [ConsumePurchaseParams](index.md)
 
 Parameters to consume a purchase. See BillingClient#consumePurchase(ConsumeParams, ConsumeResponseListener).

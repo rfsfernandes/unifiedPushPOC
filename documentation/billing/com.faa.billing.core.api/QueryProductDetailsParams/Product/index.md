@@ -2,7 +2,7 @@
 
 # Product
 
-[androidJvm]\
+\
 class [Product](index.md)
 
 A Product identifier used for querying product details.

@@ -2,7 +2,7 @@
 
 # BillingResponseCode
 
-[androidJvm]\
+\
 enum [BillingResponseCode](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[BillingResponseCode](index.md)&gt; 
 
 Possible response codes.

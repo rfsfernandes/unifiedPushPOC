@@ -2,7 +2,7 @@
 
 # Purchase
 
-[androidJvm]\
+\
 @Serializable
 
 data class [Purchase](index.md)

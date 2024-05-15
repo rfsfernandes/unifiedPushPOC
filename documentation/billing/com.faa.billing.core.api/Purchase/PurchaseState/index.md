@@ -2,7 +2,7 @@
 
 # PurchaseState
 
-[androidJvm]\
+\
 @Serializable(with = PurchaseStateSerializer::class)
 
 enum [PurchaseState](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[Purchase.PurchaseState](index.md)&gt; 

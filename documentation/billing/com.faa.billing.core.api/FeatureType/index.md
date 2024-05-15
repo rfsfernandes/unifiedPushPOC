@@ -2,7 +2,7 @@
 
 # FeatureType
 
-[androidJvm]\
+\
 enum [FeatureType](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[FeatureType](index.md)&gt; 
 
 Features/capabilities supported by BillingClient.isFeatureSupported(String).

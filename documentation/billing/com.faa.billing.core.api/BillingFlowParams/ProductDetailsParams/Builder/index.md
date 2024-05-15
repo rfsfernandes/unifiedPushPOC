@@ -2,7 +2,7 @@
 
 # Builder
 
-[androidJvm]\
+\
 class [Builder](index.md)
 
 Builder that helps construct [ProductDetailsParams](../index.md).

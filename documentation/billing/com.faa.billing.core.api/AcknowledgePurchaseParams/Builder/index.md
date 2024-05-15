@@ -2,7 +2,7 @@
 
 # Builder
 
-[androidJvm]\
+\
 class [Builder](index.md)
 
 Helps construct [AcknowledgePurchaseParams](../index.md) that are used to acknowledge a purchase.

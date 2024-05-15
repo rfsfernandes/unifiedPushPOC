@@ -2,7 +2,7 @@
 
 # ProductDetailsResult
 
-[androidJvm]\
+\
 data class [ProductDetailsResult](index.md)(val billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), val productDetailsList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt;)
 
 ## Constructors

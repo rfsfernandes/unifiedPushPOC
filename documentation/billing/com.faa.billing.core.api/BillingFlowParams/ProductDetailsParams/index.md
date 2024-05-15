@@ -2,7 +2,7 @@
 
 # ProductDetailsParams
 
-[androidJvm]\
+\
 class [ProductDetailsParams](index.md)
 
 Params that describe the product to be purchased.

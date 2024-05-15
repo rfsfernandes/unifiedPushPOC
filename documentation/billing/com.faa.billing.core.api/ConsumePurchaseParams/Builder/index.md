@@ -2,7 +2,7 @@
 
 # Builder
 
-[androidJvm]\
+\
 class [Builder](index.md)
 
 Helps construct [ConsumePurchaseParams](../index.md) that are used to consume a purchase.

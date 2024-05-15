@@ -2,7 +2,7 @@
 
 # ConsumePurchaseResult
 
-[androidJvm]\
+\
 data class [ConsumePurchaseResult](index.md)
 
 ## Properties

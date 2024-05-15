@@ -2,7 +2,7 @@
 
 # PurchasesUpdatedListener
 
-[androidJvm]\
+\
 fun interface [PurchasesUpdatedListener](index.md)
 
 Listener interface for purchase updates which happen when, for example, the user buys something within the app.

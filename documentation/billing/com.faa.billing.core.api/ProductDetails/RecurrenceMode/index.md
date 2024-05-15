@@ -2,7 +2,7 @@
 
 # RecurrenceMode
 
-[androidJvm]\
+\
 @Serializable
 
 enum [RecurrenceMode](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[ProductDetails.RecurrenceMode](index.md)&gt; 

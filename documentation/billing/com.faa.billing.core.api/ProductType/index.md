@@ -2,7 +2,7 @@
 
 # ProductType
 
-[androidJvm]\
+\
 enum [ProductType](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[ProductType](index.md)&gt; 
 
 Supported Product types.

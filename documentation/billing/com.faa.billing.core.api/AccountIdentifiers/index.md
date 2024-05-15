@@ -2,7 +2,7 @@
 
 # AccountIdentifiers
 
-[androidJvm]\
+\
 @Serializable
 
 data class [AccountIdentifiers](index.md)

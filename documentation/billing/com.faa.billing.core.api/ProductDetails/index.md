@@ -2,7 +2,7 @@
 
 # ProductDetails
 
-[androidJvm]\
+\
 @Serializable
 
 data class [ProductDetails](index.md)

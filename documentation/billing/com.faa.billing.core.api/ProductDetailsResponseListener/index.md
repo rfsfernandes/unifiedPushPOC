@@ -2,7 +2,7 @@
 
 # ProductDetailsResponseListener
 
-[androidJvm]\
+\
 fun interface [ProductDetailsResponseListener](index.md)
 
 Listener for the result of a product details query.

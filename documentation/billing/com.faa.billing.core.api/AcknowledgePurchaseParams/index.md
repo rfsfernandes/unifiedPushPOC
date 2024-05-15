@@ -2,7 +2,7 @@
 
 # AcknowledgePurchaseParams
 
-[androidJvm]\
+\
 class [AcknowledgePurchaseParams](index.md)
 
 Parameters to acknowledge a purchase. See BillingClient.acknowledgePurchase(AcknowledgePurchaseParams, AcknowledgePurchaseResponseListener).

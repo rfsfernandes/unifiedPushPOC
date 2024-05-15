@@ -2,7 +2,7 @@
 
 # BillingClientStateListener
 
-[androidJvm]\
+\
 interface [BillingClientStateListener](index.md)
 
 Callback for setup process. This listener's [onBillingSetupFinished(BillingResult)](on-billing-setup-finished.md) method is called when the setup process is complete.

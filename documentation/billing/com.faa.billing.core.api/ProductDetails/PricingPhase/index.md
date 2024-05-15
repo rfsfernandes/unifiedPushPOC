@@ -2,7 +2,7 @@
 
 # PricingPhase
 
-[androidJvm]\
+\
 @Serializable
 
 data class [PricingPhase](index.md)

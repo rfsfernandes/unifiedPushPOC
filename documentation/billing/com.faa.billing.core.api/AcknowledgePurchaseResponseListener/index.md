@@ -2,7 +2,7 @@
 
 # AcknowledgePurchaseResponseListener
 
-[androidJvm]\
+\
 fun interface [AcknowledgePurchaseResponseListener](index.md)
 
 Listener for the result of an acknowledge purchase request.

@@ -2,7 +2,7 @@
 
 # PurchasesResponseListener
 
-[androidJvm]\
+\
 fun interface [PurchasesResponseListener](index.md)
 
 Listener to a result of purchases query.

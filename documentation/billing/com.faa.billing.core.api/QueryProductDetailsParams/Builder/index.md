@@ -2,7 +2,7 @@
 
 # Builder
 
-[androidJvm]\
+\
 class [Builder](index.md)
 
 Helps construct [QueryProductDetailsParams](../index.md) required to query [ProductDetails](../../-product-details/index.md).

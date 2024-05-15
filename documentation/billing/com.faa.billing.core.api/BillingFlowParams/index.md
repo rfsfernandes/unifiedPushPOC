@@ -2,7 +2,7 @@
 
 # BillingFlowParams
 
-[androidJvm]\
+\
 class [BillingFlowParams](index.md)
 
 Created by Nuno Palma on 18/03/2024.

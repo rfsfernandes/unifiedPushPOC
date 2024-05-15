@@ -2,7 +2,7 @@
 
 # ConnectionState
 
-[androidJvm]\
+\
 enum [ConnectionState](index.md) : [Enum](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html)&lt;[ConnectionState](index.md)&gt; 
 
 Connection state of billing client.

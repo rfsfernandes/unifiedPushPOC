@@ -2,7 +2,7 @@
 
 # SubscriptionOfferDetails
 
-[androidJvm]\
+\
 @Serializable
 
 data class [SubscriptionOfferDetails](index.md)

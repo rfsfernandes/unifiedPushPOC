@@ -2,7 +2,7 @@
 
 # QueryProductDetailsParams
 
-[androidJvm]\
+\
 class [QueryProductDetailsParams](index.md)
 
 Parameters to initiate a query for Product details queryProductDetails.

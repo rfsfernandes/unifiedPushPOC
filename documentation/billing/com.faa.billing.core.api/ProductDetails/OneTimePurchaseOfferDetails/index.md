@@ -2,7 +2,7 @@
 
 # OneTimePurchaseOfferDetails
 
-[androidJvm]\
+\
 @Serializable
 
 data class [OneTimePurchaseOfferDetails](index.md)
