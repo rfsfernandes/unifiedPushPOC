@@ -2,7 +2,7 @@
 
 # AccountIdentifiers
 
-\
+[androidJvm]\
 @Serializable
 
 data class [AccountIdentifiers](index.md)
@@ -13,5 +13,5 @@ Account identifiers that were specified when the purchase was made.
 
 | Name | Summary |
 |---|---|
-| [obfuscatedAccountId](obfuscated-account-id.md) | <br>val [obfuscatedAccountId](obfuscated-account-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>An obfuscated string that is uniquely associated with the user's account in your app. |
-| [obfuscatedProfileId](obfuscated-profile-id.md) | <br>val [obfuscatedProfileId](obfuscated-profile-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>An obfuscated string that is uniquely associated with the user's profile in your app. |
+| [obfuscatedAccountId](obfuscated-account-id.md) | val [obfuscatedAccountId](obfuscated-account-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>An obfuscated string that is uniquely associated with the user's account in your app. |
+| [obfuscatedProfileId](obfuscated-profile-id.md) | val [obfuscatedProfileId](obfuscated-profile-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html)<br>An obfuscated string that is uniquely associated with the user's profile in your app. |

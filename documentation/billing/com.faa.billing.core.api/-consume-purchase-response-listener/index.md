@@ -2,7 +2,7 @@
 
 # ConsumePurchaseResponseListener
 
-\
+[androidJvm]\
 fun interface [ConsumePurchaseResponseListener](index.md)
 
 Callback that notifies when a consumption operation finishes.
@@ -11,4 +11,4 @@ Callback that notifies when a consumption operation finishes.
 
 | Name | Summary |
 |---|---|
-| [onConsumeResponse](on-consume-response.md) | <br>abstract fun [onConsumeResponse](on-consume-response.md)(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), purchaseToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))<br>Called to notify that a consume operation has finished. |
+| [onConsumeResponse](on-consume-response.md) | abstract fun [onConsumeResponse](on-consume-response.md)(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), purchaseToken: [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html))<br>Called to notify that a consume operation has finished. |

@@ -2,18 +2,18 @@
 
 # ProductDetailsResult
 
-\
+[androidJvm]\
 data class [ProductDetailsResult](index.md)(val billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), val productDetailsList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt;)
 
 ## Constructors
 
 | | |
 |---|---|
-| [ProductDetailsResult](-product-details-result.md) | <br>constructor(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), productDetailsList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt;) |
+| [ProductDetailsResult](-product-details-result.md) | constructor(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), productDetailsList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt;) |
 
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [billingResponseCode](billing-response-code.md) | <br>val [billingResponseCode](billing-response-code.md): [BillingResponseCode](../-billing-response-code/index.md) |
-| [productDetailsList](product-details-list.md) | <br>val [productDetailsList](product-details-list.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt; |
+| [billingResponseCode](billing-response-code.md) | val [billingResponseCode](billing-response-code.md): [BillingResponseCode](../-billing-response-code/index.md) |
+| [productDetailsList](product-details-list.md) | val [productDetailsList](product-details-list.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt; |

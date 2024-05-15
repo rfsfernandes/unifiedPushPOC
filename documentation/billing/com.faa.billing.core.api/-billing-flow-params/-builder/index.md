@@ -2,7 +2,7 @@
 
 # Builder
 
-\
+[androidJvm]\
 class [Builder](index.md)
 
 Builder that helps construct [BillingFlowParams](../index.md).
@@ -11,11 +11,11 @@ Builder that helps construct [BillingFlowParams](../index.md).
 
 | | |
 |---|---|
-| [Builder](-builder.md) | <br>constructor() |
+| [Builder](-builder.md) | constructor() |
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [build](build.md) | <br>fun [build](build.md)(): [BillingFlowParams](../index.md)<br>Returns an instance of [BillingFlowParams](../index.md). |
-| [setProductDetailsParams](set-product-details-params.md) | <br>fun [setProductDetailsParams](set-product-details-params.md)(productDetailsParams: [BillingFlowParams.ProductDetailsParams](../-product-details-params/index.md)): [BillingFlowParams.Builder](index.md)<br>Specifies the [ProductDetailsParams](../-product-details-params/index.md) of the items being purchased. |
+| [build](build.md) | fun [build](build.md)(): [BillingFlowParams](../index.md)<br>Returns an instance of [BillingFlowParams](../index.md). |
+| [setProductDetailsParams](set-product-details-params.md) | fun [setProductDetailsParams](set-product-details-params.md)(productDetailsParams: [BillingFlowParams.ProductDetailsParams](../-product-details-params/index.md)): [BillingFlowParams.Builder](index.md)<br>Specifies the [ProductDetailsParams](../-product-details-params/index.md) of the items being purchased. |

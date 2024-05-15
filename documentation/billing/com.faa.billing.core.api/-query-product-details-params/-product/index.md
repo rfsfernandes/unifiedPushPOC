@@ -2,7 +2,7 @@
 
 # Product
 
-\
+[androidJvm]\
 class [Product](index.md)
 
 A Product identifier used for querying product details.
@@ -11,11 +11,11 @@ A Product identifier used for querying product details.
 
 | Name | Summary |
 |---|---|
-| [Builder](-builder/index.md) | <br>class [Builder](-builder/index.md)<br>Builder that helps construct [Product](index.md). |
+| [Builder](-builder/index.md) | class [Builder](-builder/index.md)<br>Builder that helps construct [Product](index.md). |
 
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [productId](product-id.md) | <br>val [productId](product-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
-| [productType](product-type.md) | <br>val [productType](product-type.md): [ProductType](../../-product-type/index.md) |
+| [productId](product-id.md) | val [productId](product-id.md): [String](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html) |
+| [productType](product-type.md) | val [productType](product-type.md): [ProductType](../../-product-type/index.md) |

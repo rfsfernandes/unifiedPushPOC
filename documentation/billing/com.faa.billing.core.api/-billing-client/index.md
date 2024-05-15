@@ -18,13 +18,13 @@ androidJvm
 
 | | |
 |---|---|
-| [BillingClient](-billing-client.md) | <br>constructor(billingClientSettings: [BillingClientSettings](../../com.faa.billing.core.settings/-billing-client-settings/index.md)) |
+| [BillingClient](-billing-client.md) | constructor(billingClientSettings: [BillingClientSettings](../../com.faa.billing.core.settings/-billing-client-settings/index.md)) |
 
 ## Functions
 
 | Name | Summary |
 |---|---|
-| [acknowledgePurchase](../acknowledge-purchase.md) | <br>suspend fun [BillingClient](index.md).[acknowledgePurchase](../acknowledge-purchase.md)(params: [AcknowledgePurchaseParams](../-acknowledge-purchase-params/index.md)): [BillingResponseCode](../-billing-response-code/index.md) |
-| [consumePurchase](../consume-purchase.md) | <br>suspend fun [BillingClient](index.md).[consumePurchase](../consume-purchase.md)(params: [ConsumePurchaseParams](../-consume-purchase-params/index.md)): [BillingResponseCode](../-billing-response-code/index.md) |
-| [queryProductDetails](../query-product-details.md) | <br>suspend fun [BillingClient](index.md).[queryProductDetails](../query-product-details.md)(params: [QueryProductDetailsParams](../-query-product-details-params/index.md)): [ProductDetailsResult](../-product-details-result/index.md) |
-| [queryPurchases](../query-purchases.md) | <br>suspend fun [BillingClient](index.md).[queryPurchases](../query-purchases.md)(params: [QueryPurchasesParams](../../com.faa.billing.core.api.data.purchase.query/-query-purchases-params/index.md)): [PurchasesResult](../../com.faa.billing.core.api.data.purchase/-purchases-result/index.md) |
+| [acknowledgePurchase](../acknowledge-purchase.md) | suspend fun [BillingClient](index.md).[acknowledgePurchase](../acknowledge-purchase.md)(params: [AcknowledgePurchaseParams](../-acknowledge-purchase-params/index.md)): [BillingResponseCode](../-billing-response-code/index.md) |
+| [consumePurchase](../consume-purchase.md) | suspend fun [BillingClient](index.md).[consumePurchase](../consume-purchase.md)(params: [ConsumePurchaseParams](../-consume-purchase-params/index.md)): [BillingResponseCode](../-billing-response-code/index.md) |
+| [queryProductDetails](../query-product-details.md) | suspend fun [BillingClient](index.md).[queryProductDetails](../query-product-details.md)(params: [QueryProductDetailsParams](../-query-product-details-params/index.md)): [ProductDetailsResult](../-product-details-result/index.md) |
+| [queryPurchases](../query-purchases.md) | suspend fun [BillingClient](index.md).[queryPurchases](../query-purchases.md)(params: [QueryPurchasesParams](../../com.faa.billing.core.api.data.purchase.query/-query-purchases-params/index.md)): [PurchasesResult](../../com.faa.billing.core.api.data.purchase/-purchases-result/index.md) |

@@ -2,7 +2,7 @@
 
 # AcknowledgePurchaseResponseListener
 
-\
+[androidJvm]\
 fun interface [AcknowledgePurchaseResponseListener](index.md)
 
 Listener for the result of an acknowledge purchase request.
@@ -11,4 +11,4 @@ Listener for the result of an acknowledge purchase request.
 
 | Name | Summary |
 |---|---|
-| [onAcknowledgePurchaseResponse](on-acknowledge-purchase-response.md) | <br>abstract fun [onAcknowledgePurchaseResponse](on-acknowledge-purchase-response.md)(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md))<br>Called to notify that an acknowledge purchase operation has finished. |
+| [onAcknowledgePurchaseResponse](on-acknowledge-purchase-response.md) | abstract fun [onAcknowledgePurchaseResponse](on-acknowledge-purchase-response.md)(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md))<br>Called to notify that an acknowledge purchase operation has finished. |

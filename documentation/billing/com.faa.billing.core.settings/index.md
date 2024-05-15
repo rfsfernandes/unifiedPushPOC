@@ -6,4 +6,4 @@
 
 | Name | Summary |
 |---|---|
-| [BillingClientSettings](-billing-client-settings/index.md) | <br>class [BillingClientSettings](-billing-client-settings/index.md)(val context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), val testMode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val purchasesUpdatedListener: [PurchasesUpdatedListener](../com.faa.billing.core.api.data.purchase/-purchases-updated-listener/index.md))<br>Created by Nuno Palma on 18/01/2024. |
+| [BillingClientSettings](-billing-client-settings/index.md) | class [BillingClientSettings](-billing-client-settings/index.md)(val context: [Context](https://developer.android.com/reference/kotlin/android/content/Context.html), val testMode: [Boolean](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html), val purchasesUpdatedListener: [PurchasesUpdatedListener](../com.faa.billing.core.api.data.purchase/-purchases-updated-listener/index.md))<br>Created by Nuno Palma on 18/01/2024. |

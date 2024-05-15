@@ -2,7 +2,7 @@
 
 # ProductDetailsResponseListener
 
-\
+[androidJvm]\
 fun interface [ProductDetailsResponseListener](index.md)
 
 Listener for the result of a product details query.
@@ -11,4 +11,4 @@ Listener for the result of a product details query.
 
 | Name | Summary |
 |---|---|
-| [onProductDetailsResponse](on-product-details-response.md) | <br>abstract fun [onProductDetailsResponse](on-product-details-response.md)(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), productDetailsList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt;)<br>Called to provide the result of the query for product details. |
+| [onProductDetailsResponse](on-product-details-response.md) | abstract fun [onProductDetailsResponse](on-product-details-response.md)(billingResponseCode: [BillingResponseCode](../-billing-response-code/index.md), productDetailsList: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[ProductDetails](../-product-details/index.md)&gt;)<br>Called to provide the result of the query for product details. |

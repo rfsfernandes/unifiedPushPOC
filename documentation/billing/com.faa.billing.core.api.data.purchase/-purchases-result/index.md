@@ -19,11 +19,11 @@ androidJvm
 
 | | |
 |---|---|
-| [PurchasesResult](-purchases-result.md) | <br>constructor(billingResponseCode: [BillingResponseCode](../../com.faa.billing.core.api/-billing-response-code/index.md), purchases: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Purchase](../../com.faa.billing.core.api/-purchase/index.md)&gt;) |
+| [PurchasesResult](-purchases-result.md) | constructor(billingResponseCode: [BillingResponseCode](../../com.faa.billing.core.api/-billing-response-code/index.md), purchases: [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Purchase](../../com.faa.billing.core.api/-purchase/index.md)&gt;) |
 
 ## Properties
 
 | Name | Summary |
 |---|---|
-| [billingResponseCode](billing-response-code.md) | <br>val [billingResponseCode](billing-response-code.md): [BillingResponseCode](../../com.faa.billing.core.api/-billing-response-code/index.md) |
-| [purchases](purchases.md) | <br>val [purchases](purchases.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Purchase](../../com.faa.billing.core.api/-purchase/index.md)&gt; |
+| [billingResponseCode](billing-response-code.md) | val [billingResponseCode](billing-response-code.md): [BillingResponseCode](../../com.faa.billing.core.api/-billing-response-code/index.md) |
+| [purchases](purchases.md) | val [purchases](purchases.md): [List](https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html)&lt;[Purchase](../../com.faa.billing.core.api/-purchase/index.md)&gt; |
