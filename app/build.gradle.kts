@@ -55,6 +55,77 @@ tasks.dokkaGfm.configure {
     outputDirectory.set(file("../documentation"))
 }
 
+tasks.withType<DokkaTask>().configureEach {
+    moduleName.set(project.name)
+    moduleVersion.set(project.version.toString())
+    outputDirectory.set(file("../documentation"))
+    failOnWarning.set(false)
+    suppressObviousFunctions.set(true)
+    suppressInheritedMembers.set(true)
+    doFirst {
+        prepareDocumentationDirectory()
+    }
+    finalizedBy(cleanDocumentation)
+}
+
+fun prepareDocumentationDirectory() {
+    val documentationDir = file("../documentation")
+    if (documentationDir.exists()) {
+        documentationDir.deleteRecursively()
+    }
+    documentationDir.mkdirs()
+}
+
+val cleanDocumentation by tasks.registering(Delete::class) {
+    doLast {
+        val rootDir = file("../documentation/billing") // or specify your root directory
+        deleteNonIndexFiles(rootDir)
+        copyReadMeToDocumentation()
+    }
+}
+
+fun copyReadMeToDocumentation() {
+    val sourceFile = file("../README.md")
+    val destinationDir = file("../documentation")
+    val destinationFile = File(destinationDir, "integration_guide.md")
+    destinationFile.createNewFile()
+    destinationFile.writeText(sourceFile.readText())
+}
+
+fun deleteNonIndexFiles(dir: File) {
+    dir.listFiles()?.forEach { file ->
+        try {
+            if (file.isDirectory && file.name.startsWith("-") && file.name[2] == '-') {
+                file.deleteRecursively()
+                println("Deleted directory: ${file.absolutePath}")
+            } else if (file.isDirectory && file.name.startsWith('-')) {
+                val fileName = file.name.substring(1)
+                val nameArray = fileName.split("-").filter { it.isNotBlank() }
+                val filePathWithoutOldName = file.parent
+                file.renameTo(File(filePathWithoutOldName, nameArray.joinToString("").capitalize()))
+                println("Rename: ${File(filePathWithoutOldName, nameArray.joinToString("").capitalize())}")
+            }
+            if (file.isFile && file.name != "package-list") {
+                if (file.name != "index.md") {
+                    file.delete()
+                    println("Deleted file: ${file.absolutePath}")
+                } else {
+                    var content = file.readText()
+                    content = if (content.contains("[androidJvm]<br>")) {
+                        content.replace("[androidJvm]<br>", "")
+                    } else {
+                        content.replace("[androidJvm]", "")
+                    }
+                    file.writeText(content)
+                    println("Removed [androidJvm] from: ${file.absolutePath}")
+                }
+            }
+        } catch (exception: Exception) {
+            println("Error parsing file: $exception")
+        }
+    }
+}
+
 dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
