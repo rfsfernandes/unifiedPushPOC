@@ -3,9 +3,6 @@ name: Generate Documentation
 on:
   push:
     branches: [ main ]
-    paths-ignore: [ 'docs/**', 'README.md' ]
-  pull_request:
-    branches: [ main ]
   release:
     types: [published]
   workflow_dispatch:
@@ -36,9 +33,6 @@ jobs:
 
       - name: Setup Gradle
         uses: gradle/gradle-build-action@v2
-
-      - name: Create Documentation Directory
-        run: mkdir -p ./documentation
 
       # To keep FAA secret files
       - name: Make .faapriv directory
@@ -109,11 +103,6 @@ jobs:
       - name: Remove .faapriv
         run: |
           rm -rf .faapriv
-
-      - name: Copying README to documentation
-        run: |
-          echo copying
-          cp "README.md" "./documentation/integration_guide.md"
 
       - name: Commit Documentation
         run: |
