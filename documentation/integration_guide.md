@@ -258,7 +258,7 @@ A successful purchase generates a purchase success screen:
 
 # Acknowledging purchases
 
-After granting entitlement, your app must then acknowledge the purchase. This acknowledgement communicates to the Payment Services that you have granted entitlement for the purchase. Acknowledging of purchases should be performed when you are processing purchases retrieved by ```BillingClient.queryPurchases()``` or from ```PurchasesUpdatedListener``` (see [Fetching Purchases](docId:\fetching-purchases)).
+After granting entitlement, your app must then acknowledge the purchase. This acknowledgement communicates to the Payment Services that you have granted entitlement for the purchase. Acknowledging of purchases should be performed when you are processing purchases retrieved by ```BillingClient.queryPurchases()``` or from ```PurchasesUpdatedListener``` (see [Fetching Purchases](docId\:RUlqKMOdSg2j99g9CFEd7#fetching-purchases)).
 
 The process to grant entitlement and acknowledge the purchase depends on whether the purchase is a consumable or a non-consumable.
 <br>
