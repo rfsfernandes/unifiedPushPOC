@@ -33,7 +33,7 @@ dependencies {
 }
 ```
 
-## (Initialise BillingClient)[#initialise-billingclient]
+## [Initialise BillingClient](#initialise-billingclient)
 
 After adding the In-App SDK dependency, a ```BillingClient```instance needs to be created.
 ```BillingClient``` is the entry point to accessing the In-App SDK features. It offers convenience methods that cover many common tasks associated with billing.
@@ -271,15 +271,15 @@ val client: BillingClient = ...
 val acknowledgePurchaseResponseListener: AcknowledgePurchaseResponseListener = ...
 
 suspend fun handlePurchase(purchase: Purchase) {
-    if (purchase.purchaseState === PurchaseState.PURCHASED) {
-        if (!purchase.isAcknowledged) {
-            val acknowledgePurchaseParams = AcknowledgePurchaseParams.newBuilder()
-                .setPurchaseToken(purchase.purchaseToken)
-            client.acknowledgePurchase(acknowledgePurchaseParams.build()) { responseCode ->
-                // handle acknowledge result
-            }
-        }
+  if (purchase.purchaseState === PurchaseState.PURCHASED) {
+    if (!purchase.isAcknowledged) {
+      val acknowledgePurchaseParams = AcknowledgePurchaseParams.newBuilder()
+          .setPurchaseToken(purchase.purchaseToken)
+      client.acknowledgePurchase(acknowledgePurchaseParams.build()) { responseCode ->
+        // handle acknowledge result
+      }
     }
+   }
 }
 ```
 
@@ -288,20 +288,20 @@ For consumables, use consumePurchase() from the In-App SDK. This method fulfils 
 The following example illustrates consuming a product using the associated purchase token:
 ```kotlin
 suspend fun handlePurchase(purchase: Purchase) {
-    // Purchase retrieved from BillingClient#queryPurchasesAsync or your PurchasesUpdatedListener.
-    val purchase : Purchase = ...
+  // Purchase retrieved from BillingClient#queryPurchasesAsync or your PurchasesUpdatedListener.
+  val purchase : Purchase = ...
 
-    // Verify the purchase.
-    // Ensure entitlement was not already granted for this purchaseToken.
-    // Grant entitlement to the user.
+  // Verify the purchase.
+  // Ensure entitlement was not already granted for this purchaseToken.
+  // Grant entitlement to the user.
 
-    val consumePurchaseParams =
-        ConsumePurchaseParams.newBuilder()
-            .setPurchaseToken(purchase.getPurchaseToken())
-            .build()
-    val consumeResult = withContext(Dispatchers.IO) {
-        client.consumePurchase(consumeParams)
-    }
+  val consumePurchaseParams =
+    ConsumePurchaseParams.newBuilder()
+      .setPurchaseToken(purchase.getPurchaseToken())
+      .build()
+  val consumeResult = withContext(Dispatchers.IO) {
+    client.consumePurchase(consumeParams)
+  }
 }
 ```
 
@@ -312,16 +312,16 @@ To prevent fraudulent transactions, i.e., malicious actors tricking your app int
 const val KEY_FACTORY_ALGORITHM = "RSA"
 
 private val publicKey by lazy {
-    try {
-        val decodedKey = Base64.decode(IN_APP_SDK_PUBLIC_KEY, Base64.DEFAULT)
-        val keyFactory = KeyFactory.getInstance(KEY_FACTORY_ALGORITHM)
-        return@lazy keyFactory.generatePublic(X509EncodedKeySpec(decodedKey))
-    } catch (e: NoSuchAlgorithmException) {
-        throw RuntimeException(e)
-    } catch (e: InvalidKeySpecException) {
-        Log.e(TAG, "Invalid key specification.")
-        throw IllegalArgumentException(e)
-    }
+  try {
+    val decodedKey = Base64.decode(IN_APP_SDK_PUBLIC_KEY, Base64.DEFAULT)
+    val keyFactory = KeyFactory.getInstance(KEY_FACTORY_ALGORITHM)
+    return@lazy keyFactory.generatePublic(X509EncodedKeySpec(decodedKey))
+  } catch (e: NoSuchAlgorithmException) {
+    throw RuntimeException(e)
+  } catch (e: InvalidKeySpecException) {
+    Log.e(TAG, "Invalid key specification.")
+    throw IllegalArgumentException(e)
+  }
 }
 ```
 
@@ -329,10 +329,10 @@ After that we decode Base-64 encoded signature
 
 ```kotlin
 val signatureBytes = try {
-    Base64.decode(encodedSignature, Base64.DEFAULT)
+   Base64.decode(encodedSignature, Base64.DEFAULT)
 } catch (e: java.lang.IllegalArgumentException) {
-    Log.e(TAG, "Base64 decoding failed.")
-    return false
+  Log.e(TAG, "Base64 decoding failed.")
+  return false
 }
 ```
 

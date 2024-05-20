@@ -33,7 +33,7 @@ dependencies {
 }
 ```
 
-## (Initialise BillingClient)[#initialise-billingclient]
+## [Initialise BillingClient](#initialise-billingclient)
 
 After adding the In-App SDK dependency, a ```BillingClient```instance needs to be created.
 ```BillingClient``` is the entry point to accessing the In-App SDK features. It offers convenience methods that cover many common tasks associated with billing.
