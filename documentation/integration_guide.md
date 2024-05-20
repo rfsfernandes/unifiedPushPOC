@@ -167,7 +167,7 @@ if (result.billingResponseCode == BillingResponseCode.OK) {
 }
 ```
 
-# [Fetching purchases](#fetching-purchases)
+# Fetching purchases {#fetching-purchases}
 -------------------
 Every time the user completes a billing flow successfully its purchases are updated. To receive updates on purchases call ```setListener``` on the ```BillingClient.Builder``` , passing a reference to a ```PurchasesUpdatedListener``` :
 ```kotlin
@@ -258,7 +258,7 @@ A successful purchase generates a purchase success screen:
 
 # Acknowledging purchases
 
-After granting entitlement, your app must then acknowledge the purchase. This acknowledgement communicates to the Payment Services that you have granted entitlement for the purchase. Acknowledging of purchases should be performed when you are processing purchases retrieved by ```BillingClient.queryPurchases()``` or from ```PurchasesUpdatedListener``` (see [Fetching Purchases](#fetching-purchases)).
+After granting entitlement, your app must then acknowledge the purchase. This acknowledgement communicates to the Payment Services that you have granted entitlement for the purchase. Acknowledging of purchases should be performed when you are processing purchases retrieved by ```BillingClient.queryPurchases()``` or from ```PurchasesUpdatedListener``` (see [Fetching Purchases](integration_guide.md#fetching-purchases)).
 
 The process to grant entitlement and acknowledge the purchase depends on whether the purchase is a consumable or a non-consumable.
 <br>
