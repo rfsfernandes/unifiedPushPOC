@@ -167,7 +167,7 @@ if (result.billingResponseCode == BillingResponseCode.OK) {
 }
 ```
 
-# Fetching purchases {#fetching-purchases}
+# [Fetching purchases](#fetching-purchases)
 -------------------
 Every time the user completes a billing flow successfully its purchases are updated. To receive updates on purchases call ```setListener``` on the ```BillingClient.Builder``` , passing a reference to a ```PurchasesUpdatedListener``` :
 ```kotlin
