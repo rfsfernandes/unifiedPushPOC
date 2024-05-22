@@ -1,6 +1,7 @@
 - [In-App SDK - Integration Guide](integration_guide.md)
 
-## Table of contents
+## SDK Reference
 
-- [In-App SDK - Integration Guide](integration_guide.md)
+### com.faa.billing.core.settings
+
 - [SDK Reference](SDK_Reference/com.faa.billing.core.settings/index.md)
