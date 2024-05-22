@@ -124,7 +124,7 @@ class MainActivity : AppCompatActivity() {
 
 ***
 
-Some Android devices might have an older version of FAA’s Payments Service that doesn't support certain products types, such as subscriptions. Before your app enters the billing flow, you can call `isFeatureSupported()` to determine whether the device supports the products you want to sell. For a list of product types that can be supported, see `BillingClient.FeatureType`. You can check which capabilities the Billing service supports using `isFeatureSupported(featureType: FeatureType)`. The possible available features are documented in [FeatureType](docId\:mXRCJWVwAyAnfCtDzguPG).
+Some Android devices might have an older version of FAA’s Payments Service that doesn't support certain products types, such as subscriptions. Before your app enters the billing flow, you can call `isFeatureSupported()` to determine whether the device supports the products you want to sell. For a list of product types that can be supported, see `BillingClient.FeatureType`. You can check which capabilities the Billing service supports using `isFeatureSupported(featureType: FeatureType)`. The possible available features are documented in [FeatureType](./SDK%20Reference/com.faa.billing.core.api/FeatureType/index.md).
 
 > Subscriptions are currently not supported.
 
