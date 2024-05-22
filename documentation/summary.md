@@ -1,6 +1,6 @@
 - [In-App SDK - Integration Guide](integration_guide.md)
 
-## SDK Reference
+## Table of contents
 
-- [Settings Package Level Declarations](SDK Reference/com.faa.billing.core.settings/index.md)
-- [BillingClientSettings](SDK Reference/com.faa.billing.core.settings/BillingClientSettings/index.md)
+- [In-App SDK - Integration Guide](integration_guide.md)
+- [SDK Reference](./SDK Reference)
