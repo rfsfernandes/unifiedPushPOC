@@ -2,6 +2,6 @@
   "docsPath": "documentation/",
   "publishSpace": true,
   "structure": {
-    "assets": "./.archbee/assets"
+    "assets": "./SDK Reference"
   }
 }
