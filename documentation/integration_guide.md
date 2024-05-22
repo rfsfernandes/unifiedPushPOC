@@ -29,9 +29,9 @@ Add the In-App SDK dependency in your app’s file `build.gradle` as shown:
 
 ```groovy
 dependencies {
-  def inapp_version = "2.0.2"
+    def inapp_version = "2.0.2"
 
-  implementation "com.faa.billingclient:InApp-SDK:$inapp_version"
+    implementation "com.faa.billingclient:InApp-SDK:$inapp_version"
 }
 ```
 
@@ -47,9 +47,9 @@ After adding the In-App SDK dependency, a `BillingClient`instance needs to be cr
 
 ```kotlin
 val billingClientSettings = BillingClientSettings.Builder()
-      .setContext(context)
-      .setPurchasesUpdatedListener(purchasesUpdatedListener)
-      .build()
+    .setContext(context)
+    .setPurchasesUpdatedListener(purchasesUpdatedListener)
+    .build()
 billingClient = BillingClient(billingClientSettings)
 ```
 
@@ -64,15 +64,15 @@ Once you’ve instantiated the `BillingClient`, you need to establish a connecti
 
 ```kotlin
 billingClient.startConnection(object : BillingClientStateListener {
-  override fun onBillingSetupFinished(billingResponseCode: BillingResponseCode) {
-    if (billingResponseCode == BillingResponseCode.OK) {
-      // The BillingClient is ready. You can query purchases here.
+    override fun onBillingSetupFinished(billingResponseCode: BillingResponseCode) {
+        if (billingResponseCode == BillingResponseCode.OK) {
+            // The BillingClient is ready. You can query purchases here.
+        }
     }
-  }
-  override fun onBillingServiceDisconnected() {
-    // Try to restart the connection on the next request to
-    // FAA Payments'system by calling the startConnection() method.
-  }
+    override fun onBillingServiceDisconnected() {
+        // Try to restart the connection on the next request to
+        // FAA Payments'system by calling the startConnection() method.
+    }
 })
 ```
 
@@ -81,42 +81,42 @@ It may happen that the billing client fails to connect or loses connection to FA
 ```kotlin
 class MainActivity : AppCompatActivity() {
 
- companion object MA {
-   const val TAG = "MainActivity"
-   const val MAX_WAITING_MILLIS = 900_000L // 15 minutes in milliseconds
- }
+    companion object MA {
+        const val TAG = "MainActivity"
+        const val MAX_WAITING_MILLIS = 900_000L // 15 minutes in milliseconds
+    }
 
- private lateinit var billingClient: BillingClient
+    private lateinit var billingClient: BillingClient
 
- private var retryInterval: Long = 1000
+    private var retryInterval: Long = 1000
 
- private val billingClientStateListener = object : BillingClientStateListener {
-   override fun onBillingSetupFinished(billingResponseCode: BillingResponseCode) {
-     if (billingResponseCode == BillingResponseCode.OK) {
-       // The BillingClient is ready. You can query purchases here.
-     } else if (billingResponseCode == BillingResponseCode.SERVICE_UNAVAILABLE) {
-       retryBillingServiceConnectionWithExponentialBackoff()
-     }
-   }
-   override fun onBillingServiceDisconnected() {
-     retryBillingServiceConnectionWithExponentialBackoff()
-   }
- }
+    private val billingClientStateListener = object : BillingClientStateListener {
+        override fun onBillingSetupFinished(billingResponseCode: BillingResponseCode) {
+            if (billingResponseCode == BillingResponseCode.OK) {
+                // The BillingClient is ready. You can query purchases here.
+            } else if (billingResponseCode == BillingResponseCode.SERVICE_UNAVAILABLE) {
+                retryBillingServiceConnectionWithExponentialBackoff()
+            }
+        }
+        override fun onBillingServiceDisconnected() {
+            retryBillingServiceConnectionWithExponentialBackoff()
+        }
+    }
 
- override fun onCreate(savedInstanceState: Bundle?) {
-  // Initiate BillingClient
-  billingClient.startConnection()
- }
- 
- //...
- private fun retryBillingServiceConnectionWithExponentialBackoff() {
-   lifecycleScope.launch(Dispatchers.Main) {
-     delay(retryInterval)
-     Log.d(TAG, "onBillingSetupFinished: Failed to connect to billing service, retrying")
-     billingClient.startConnection(billingClientStateListener)
-     retryInterval = min(2 * retryInterval, MAX_WAITING_MILLIS)
-   }
- }
+    override fun onCreate(savedInstanceState: Bundle?) {
+        // Initiate BillingClient
+        billingClient.startConnection()
+    }
+
+    //...
+    private fun retryBillingServiceConnectionWithExponentialBackoff() {
+        lifecycleScope.launch(Dispatchers.Main) {
+            delay(retryInterval)
+            Log.d(TAG, "onBillingSetupFinished: Failed to connect to billing service, retrying")
+            billingClient.startConnection(billingClientStateListener)
+            retryInterval = min(2 * retryInterval, MAX_WAITING_MILLIS)
+        }
+    }
 }
 ```
 
@@ -139,20 +139,20 @@ To handle the result of the asynchronous operation, you must also specify a list
 
 ```kotlin
 val queryProductDetailsParams =
-  QueryProductDetailsParams.newBuilder()
-    .setProductList(
-      ImmutableList.of(
-        Product.newBuilder()
-          .setProductId("product_id_example")
-          .setProductType(ProductType.IN_APP)
-          .build()))
-    .build()
+    QueryProductDetailsParams.newBuilder()
+        .setProductList(
+            ImmutableList.of(
+                Product.newBuilder()
+                    .setProductId("product_id_example")
+                    .setProductType(ProductType.IN_APP)
+                    .build()))
+        .build()
 
-billingClient.queryProductDetails(queryProductDetailsParams) { 
-  billingResponseCode,
-  productDetailsList ->
-   // check billingResponseCode
-   // process returned productDetailsList
+billingClient.queryProductDetails(queryProductDetailsParams) {
+        billingResponseCode,
+        productDetailsList ->
+    // check billingResponseCode
+    // process returned productDetailsList
 }
 ```
 
@@ -160,20 +160,20 @@ billingClient.queryProductDetails(queryProductDetailsParams) {
 
 ```kotlin
 val queryProductDetailsParams =
-  QueryProductDetailsParams.newBuilder()
-    .setProductList(
-      ImmutableList.of(
-        Product.newBuilder()
-          .setProductId("product_id_example")
-          .setProductType(ProductType.IN_APP)
-          .build()))
-    .build()
-    
+    QueryProductDetailsParams.newBuilder()
+        .setProductList(
+            ImmutableList.of(
+                Product.newBuilder()
+                    .setProductId("product_id_example")
+                    .setProductType(ProductType.IN_APP)
+                    .build()))
+        .build()
+
 val result = billingClient.queryProductDetails(queryProductDetailsParams)
 if (result.billingResponseCode == BillingResponseCode.OK) {
-  // process returned productDetailsList
+    // process returned productDetailsList
 } else {
-  Log.e(TAG, "error while fetching product details, ${result.billingResponseCode}")
+    Log.e(TAG, "error while fetching product details, ${result.billingResponseCode}")
 }
 ```
 
@@ -185,25 +185,25 @@ Every time the user completes a billing flow successfully its purchases are upda
 
 ```kotlin
 private val purchasesUpdatedListener =
-  PurchasesUpdatedListener { billingResponseCode, purchases ->
-    // To be implemented in a later section.
-  }
+    PurchasesUpdatedListener { billingResponseCode, purchases ->
+        // To be implemented in a later section.
+    }
 
 private var billingClient = BillingClient.Builder()
-  .setContext(context)
-  .setListener(purchasesUpdatedListener)
-  .build()
+    .setContext(context)
+    .setListener(purchasesUpdatedListener)
+    .build()
 ```
 
 Furthermore, to cover the scenario where network issues prevent the app from receiving updates or the user has completed the billing flow in another device, it is recommended that you call `BillingClient.queryPurchases()` in ` onResume()`, passing a reference of `QueryPurchasesParams` and `PurchasesResponseListener`. In the bellow example it is shown how to fetch purchases using `queryPurchases()`:
 
 ```kotlin
 val params = QueryPurchasesParams.Builder()
-        .setProductType(ProductType.IN_APP)
-        .build()
+    .setProductType(ProductType.IN_APP)
+    .build()
 
-billingClient.queryPurchases(params){ billingResponseCode, purchases -> 
-  // process purchases
+billingClient.queryPurchases(params){ billingResponseCode, purchases ->
+    // process purchases
 }
 ```
 
@@ -211,14 +211,14 @@ billingClient.queryPurchases(params){ billingResponseCode, purchases ->
 
 ```kotlin
 val params = QueryPurchasesParams.Builder()
-        .setProductType(ProductType.IN_APP)
-        .build()
+    .setProductType(ProductType.IN_APP)
+    .build()
 
 val result = billingClient.queryPurchases(params)
 if (result.billingResponseCode == BillingResponseCode.OK) {
-  processPurchases(result.purchases)
+    processPurchases(result.purchases)
 } else {
-  Log.e(TAG, "error while fetching purchases, ${result.billingResponseCode}")
+    Log.e(TAG, "error while fetching purchases, ${result.billingResponseCode}")
 }
 ```
 
@@ -230,16 +230,16 @@ When a billing flow is complete this will trigger a call to `PurchasesUpdatedLis
 private val arePurchasesBeingProcessed = AtomicBoolean(false)
 
 override fun onPurchasesUpdated(
-  billingResponseCode: BillingResponseCode,
-  purchases: List<Purchase>
+    billingResponseCode: BillingResponseCode,
+    purchases: List<Purchase>
 ) {
-  if (arePurchasesBeingProcessed.getAndSet(true)) return
-  if (billingResponseCode == BillingResponseCode.OK) {
-    processPurchases(purchases)
-  } else {
-    arePurchasesBeingProcessed.set(false)
-    Log.e(TAG, "error while updating purchases, $billingResponseCode")
-  }
+    if (arePurchasesBeingProcessed.getAndSet(true)) return
+    if (billingResponseCode == BillingResponseCode.OK) {
+        processPurchases(purchases)
+    } else {
+        arePurchasesBeingProcessed.set(false)
+        Log.e(TAG, "error while updating purchases, $billingResponseCode")
+    }
 }
 ```
 
@@ -251,26 +251,26 @@ Invoke the `launchBillingFlow()` method from the main thread in order to initiat
 
 ```kotlin
 val productDetailsParams = BillingFlowParams
-      .ProductDetailsParams.Builder()
-      .setProductDetails(productDetails)
-      .build()
+    .ProductDetailsParams.Builder()
+    .setProductDetails(productDetails)
+    .build()
 
 val billingFlowParams = BillingFlowParams.Builder()
-      .setProductDetailsParams(productDetailsParams)
-      .build()
+    .setProductDetailsParams(productDetailsParams)
+    .build()
 
 val billingResponseCode = billingClient.launchBillingFlow(billingFlowParams)
 ```
 
 When launchBillingFlow() is called successfully, the system shows a billing dialog:
 
-![Confirm purchase](https://archbee-image-uploads.s3.amazonaws.com/O6mTkvZlwCWnm_pdRet4Y/R1hTxDyiwprrWJma1Xlw6_.blob)
+![Confirm purchase](https://archbee-image-uploads.s3.amazonaws.com/O6mTkvZlwCWnm_pdRet4Y/Wt8iQWxfYqTrOIbv-7tjH_confirm-purchase.png)
 
 The Payments service calls `onPurchasesUpdated()` to deliver the result of the purchase operation to a listener that implements the `PurchasesUpdatedListener interface`. The listener is specified using the `setListener()` method when you [initialised your client]().
 
 A successful purchase generates a purchase success screen:
 
-![Purchase confirmation](https://archbee-image-uploads.s3.amazonaws.com/O6mTkvZlwCWnm_pdRet4Y/t9JkrAFhdEDG6PLSUvujF_purchase-confirmation.png)
+![](https://archbee-image-uploads.s3.amazonaws.com/O6mTkvZlwCWnm_pdRet4Y/jd5jSC6zEGxtVFhHg2oM6_purchase-confirmation.png)
 
 > The UI showcased here will vary depending on the environment (OEM) where the purchases are taking place.
 
@@ -435,4 +435,3 @@ Next, when processing the purchases retrieved by `BillingClient.queryPurchases`,
 ```kotlin
 verify(purchase.originalJson, purchase.signature)
 ```
-
