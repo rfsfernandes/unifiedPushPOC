@@ -1,4 +1,7 @@
 {
   "docsPath": "documentation/",
-  "publishSpace": true
+  "publishSpace": true,
+  "structure": {
+    "assets": "./.archbee/assets"
+  }
 }
