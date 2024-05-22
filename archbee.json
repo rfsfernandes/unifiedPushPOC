@@ -1,7 +1,4 @@
 {
   "docsPath": "documentation/",
-  "publishSpace": true,
-  "structure": {
-    "summary": "summary.md"
-  }
+  "publishSpace": true
 }
