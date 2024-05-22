@@ -37,7 +37,7 @@ dependencies {
 
 ## Initialise BillingClient
 
-After adding the In-App SDK dependency, a `BillingClient`instance needs to be created.
+After adding the In-App SDK dependency, a `BillingClient` instance needs to be created.
 `BillingClient` is the entry point to accessing the In-App SDK features. It offers convenience methods that cover many common tasks associated with billing.
 
 `BillingClient.Builder()` is used to configure and create a `BillingClient`instance tailored to the needs of your app, as well as for injecting dependencies of In-App SDK. It is required that the following parameters are passed to `BillingClient.Builder`:
