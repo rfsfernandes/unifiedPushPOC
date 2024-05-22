@@ -1,7 +1,7 @@
 ---
 title: In-App SDK - Integration Guide
 createdAt: 2024-05-22T10:29:25.922Z
-updatedAt: 2024-05-22T13:34:56.702Z
+updatedAt: 2024-05-22T14:00:51.500Z
 ---
 
 Add the In-App SDK's maven repository to your project's `build.gradle` or `setting.gradle`.
@@ -281,8 +281,6 @@ A successful purchase generates a purchase success screen:
 After granting entitlement, your app must then acknowledge the purchase. This acknowledgement communicates to the Payment Services that you have granted entitlement for the purchase. Acknowledging of purchases should be performed when you are processing purchases retrieved by `BillingClient.queryPurchases()` or from `PurchasesUpdatedListener` (see [Fetching Purchases](integration_guide.md#fetching-purchases)).
 
 The process to grant entitlement and acknowledge the purchase depends on whether the purchase is a consumable or a non-consumable.
-
-
 
 ## Non-Consumables
 
