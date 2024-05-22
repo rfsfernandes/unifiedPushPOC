@@ -1,8 +1,4 @@
----
-title: In-App SDK - Integration Guide
-createdAt: 2024-05-22T10:29:25.922Z
-updatedAt: 2024-05-22T14:00:51.500Z
----
+# In-App SDK - Integration Guide
 
 Add the In-App SDK's maven repository to your project's `build.gradle` or `setting.gradle`.
 
@@ -433,3 +429,4 @@ Next, when processing the purchases retrieved by `BillingClient.queryPurchases`,
 ```kotlin
 verify(purchase.originalJson, purchase.signature)
 ```
+
