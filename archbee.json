@@ -1,7 +1,4 @@
 {
   "docsPath": "documentation/",
-  "publishSpace": true,
-  "structure": {
-    "assets": "./SDK Reference"
-  }
+  "publishSpace": true
 }
