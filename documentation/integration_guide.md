@@ -35,7 +35,7 @@ dependencies {
 }
 ```
 
-## &#x20; Initialise BillingClient
+## Initialise BillingClient
 
 After adding the In-App SDK dependency, a `BillingClient`instance needs to be created.
 `BillingClient` is the entry point to accessing the In-App SDK features. It offers convenience methods that cover many common tasks associated with billing.
@@ -177,7 +177,7 @@ if (result.billingResponseCode == BillingResponseCode.OK) {
 }
 ```
 
-# &#x20; Fetching purchases
+# Fetching purchases<
 
 ***
 
@@ -266,11 +266,11 @@ When launchBillingFlow() is called successfully, the system shows a billing dial
 
 ![Confirm purchase](https://archbee-image-uploads.s3.amazonaws.com/O6mTkvZlwCWnm_pdRet4Y/Wt8iQWxfYqTrOIbv-7tjH_confirm-purchase.png)
 
-The Payments service calls `onPurchasesUpdated()` to deliver the result of the purchase operation to a listener that implements the `PurchasesUpdatedListener interface`. The listener is specified using the `setListener()` method when you [initialised your client]().
+The Payments service calls `onPurchasesUpdated()` to deliver the result of the purchase operation to a listener that implements the `PurchasesUpdatedListener interface`. The listener is specified using the `setListener()` method when you [initialised your client](integration_guide.md#initialise-billingclient).
 
 A successful purchase generates a purchase success screen:
 
-![](https://archbee-image-uploads.s3.amazonaws.com/O6mTkvZlwCWnm_pdRet4Y/jd5jSC6zEGxtVFhHg2oM6_purchase-confirmation.png)
+![Purchase confirmation](https://archbee-image-uploads.s3.amazonaws.com/O6mTkvZlwCWnm_pdRet4Y/jd5jSC6zEGxtVFhHg2oM6_purchase-confirmation.png)
 
 > The UI showcased here will vary depending on the environment (OEM) where the purchases are taking place.
 
@@ -278,7 +278,7 @@ A successful purchase generates a purchase success screen:
 
 # Acknowledging purchases
 
-After granting entitlement, your app must then acknowledge the purchase. This acknowledgement communicates to the Payment Services that you have granted entitlement for the purchase. Acknowledging of purchases should be performed when you are processing purchases retrieved by `BillingClient.queryPurchases()` or from `PurchasesUpdatedListener` (see [Fetching Purchases]()).
+After granting entitlement, your app must then acknowledge the purchase. This acknowledgement communicates to the Payment Services that you have granted entitlement for the purchase. Acknowledging of purchases should be performed when you are processing purchases retrieved by `BillingClient.queryPurchases()` or from `PurchasesUpdatedListener` (see [Fetching Purchases](integration_guide.md#fetching-purchases)).
 
 The process to grant entitlement and acknowledge the purchase depends on whether the purchase is a consumable or a non-consumable.
 
