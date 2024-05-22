@@ -3,4 +3,4 @@
 ## Table of contents
 
 - [In-App SDK - Integration Guide](integration_guide.md)
-- [SDK Reference](./SDK Reference)
+- [SDK Reference](SDK Reference)
