@@ -177,7 +177,7 @@ if (result.billingResponseCode == BillingResponseCode.OK) {
 }
 ```
 
-# Fetching purchases<
+# Fetching purchases
 
 ***
 
